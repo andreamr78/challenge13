@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Button, Container, Table } from "react-bootstrap";
 
 const SavedCandidates = () => {
@@ -8,7 +8,7 @@ const SavedCandidates = () => {
   function deleteCandidate(i:any){
     let copy = [...candidates];
     copy = copy.filter(
-      (item, index) =>  i != index
+      (_item, index) =>  i != index
     )
     setCandidates(copy);
   }
