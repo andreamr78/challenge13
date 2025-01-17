@@ -1,16 +1,14 @@
 import { useState, useEffect, useRef } from 'react';
-import { searchGithub, searchGithubUser } from '../api/API';
+import { searchGithub } from '../api/API';
 import { Candidates } from '../interfaces/CandidateInterface';
 import CandidateCards from '../components/CandidateCards';
 import Carousel from 'react-bootstrap/Carousel';
-import { Button, Container, Row } from 'react-bootstrap';
-import { useNavigate } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
 
 const CandidateSearch = () => {
   const [candidates, setCandidates] = useState<Candidates[]>([]);;
   const [index, setIndex] = useState(0);
   const [arrayCandidates, setArrayCandidates] = useState<any>([]);
-  // const navigate = useNavigate();
   useEffect( () => {
     getData();
   }, [])
@@ -44,7 +42,7 @@ const CandidateSearch = () => {
     })
     setCandidates(finalData);
   }
-  // console.log(arrayCandidates);
+
   localStorage.setItem('selectedCandidate', JSON.stringify(arrayCandidates));
   return (
     <div>
