@@ -29,7 +29,7 @@ export default {
 * Optionally, add `plugin:@typescript-eslint/stylistic-type-checked`.
 * Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` and `plugin:react/jsx-runtime` to the `extends` list.
 
-LINK TO DEPLOYMENT: https://6789efdffe670bc9e47c2567--effortless-kangaroo-b9656a.netlify.app/
+LINK TO DEPLOYMENT: [https://6789efdffe670bc9e47c2567--effortless-kangaroo-b9656a.netlify.app/](https://challng13.netlify.app/)
 
 SCREENSHOTS:
 <img width="1440" alt="Screenshot 2025-01-16 at 11 15 59 p m" src="https://github.com/user-attachments/assets/18ecd345-a958-4d57-82b6-6df2e9718c98" />
